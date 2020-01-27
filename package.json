@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-greencoast",
+  "version": "0.0.1",
+  "description": "A shareable ESLint config used by Greencoast Studios.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greencoast-studios/eslint-config-greencoast.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "greencoast",
+    "greencoast-studios",
+    "eslint-greencoast",
+    "eslint-config-greencoast"
+  ],
+  "author": "Greencoast Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greencoast-studios/eslint-config-greencoast/issues"
+  },
+  "homepage": "https://github.com/greencoast-studios/eslint-config-greencoast#readme"
+}
