@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/greencoast-studios/eslint-config-greencoast/issues"
   },
-  "homepage": "https://github.com/greencoast-studios/eslint-config-greencoast#readme"
+  "homepage": "https://github.com/greencoast-studios/eslint-config-greencoast#readme",
+  "peerDependencies": {
+    "eslint": ">= 4",
+    "eslint-plugin-jsx-a11y": ">= 6.2.3",
+    "eslint-plugin-react": ">= 7.17.0"
+  },
+  "dependencies": {
+    "eslint-config-react-app": "^5.1.0"
+  }
 }
