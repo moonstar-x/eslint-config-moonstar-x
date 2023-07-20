@@ -75,7 +75,12 @@ module.exports = {
     'no-undef': 'error',
     'no-undefined': 'off',
     'no-unused-vars': 'error',
-    'no-use-before-define': ['error', 'nofunc'],
+    'no-use-before-define': ['error', {
+      'functions': true,
+      'classes': false,
+      'variables': true,
+      'allowNamedExports': false
+    }],
 
     // ES6
     'arrow-parens': ['error', 'always'],
@@ -149,7 +154,7 @@ module.exports = {
       'skipComments': true,
       'skipBlankLines': true
     }],
-    'max-params': ['warn', 3],
+    'max-params': ['warn', 4],
     'max-statements-per-line': 'error',
     'max-statements': ['error', 30, {
       'ignoreTopLevelFunctions': true
