@@ -2,7 +2,6 @@
   "name": "eslint-config-greencoast",
   "version": "0.0.2",
   "description": "A shareable ESLint config used by Greencoast Studios.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/greencoast-studios/eslint-config-greencoast.git"
@@ -22,8 +21,7 @@
   },
   "homepage": "https://github.com/greencoast-studios/eslint-config-greencoast#readme",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=6.1.0",
-    "@typescript-eslint/parser": ">=6.1.0",
+    "@typescript-eslint/eslint-plugin": ">=5.62.0",
     "eslint": ">=8",
     "eslint-plugin-jsx-a11y": ">=6.7.1",
     "eslint-plugin-react": ">=7.32.2",
@@ -32,6 +30,7 @@
     "eslint-plugin-react-hooks": ">=4.6.0"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^6.1.0",
     "eslint-config-react-app": "^7.0.1"
   }
 }
