@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'greencoast/typescript',
-    'greencoast/react'
+    'greencoast/react',
+    'greencoast/_typescript_rules_only'
   ],
   rules: {
     'react/prop-types': 'off'
