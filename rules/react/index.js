@@ -14,7 +14,7 @@ module.exports = {
   extends: [
     'react-app',
     'plugin:jsx-a11y/recommended',
-    'greencoast/es6'
+    '@moonstar-x/eslint-config/rules/node/es6'
   ],
   rules: {
     'no-console': 'off',

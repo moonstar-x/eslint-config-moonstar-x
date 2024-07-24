@@ -6,7 +6,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'greencoast/es6',
-    'greencoast/_typescript_rules_only'
+    '@moonstar-x/eslint-config/rules/node/es6',
+    '@moonstar-x/eslint-config/rules/typescript/common'
   ]
 };

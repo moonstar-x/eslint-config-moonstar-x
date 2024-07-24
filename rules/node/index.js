@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'greencoast/es6'
+    '@moonstar-x/eslint-config/rules/node/es6'
   ],
   env: {
     node: true

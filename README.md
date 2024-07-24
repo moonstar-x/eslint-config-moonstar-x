@@ -1,8 +1,14 @@
-# eslint-config-greencoast
+# @moonstar-x/eslint-config
 
-A shareable ESLint config used by Greencoast Studios.
+This repo contains a custom ESLint config used by moonstar-x.
 
 ## Usage
+
+This config is meant for **ESLint version 8**, make sure to install it in your project as well with:
+
+```bash
+npm install eslint@8
+```
 
 This config exposes multiple configs depending on the type of the project you're using.
 
@@ -12,7 +18,7 @@ For Node.js projects, you should use the following config inside your `eslint` c
 
 ```json
 {
-  "extends": ["greencoast/node"]
+  "extends": ["@moonstar-x/eslint-config/rules/node"]
 }
 ```
 
@@ -22,14 +28,8 @@ For Node.js with TypeScript projects, you should use the following config inside
 
 ```json
 {
-  "extends": ["greencoast/node", "greencoast/typescript"]
+  "extends": ["@moonstar-x/eslint-config/rules/node", "@moonstar-x/eslint-config/rules/typescript"]
 }
-```
-
-Additionally, you'll need to install some config dependencies:
-
-```text
-npm install --save-dev @typescript-eslint/eslint-plugin
 ```
 
 ### React
@@ -38,14 +38,8 @@ For React projects, you should use the following config inside your `eslint` con
 
 ```json
 {
-  "extends": ["greencoast/react"]
+  "extends": ["@moonstar-x/eslint-config/rules/react"]
 }
-```
-
-Additionally, you'll need to install some config dependencies:
-
-```text
-npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-flowtype eslint-plugin-import eslint-plugin-react-hooks
 ```
 
 ### React (TypeScript)
@@ -54,14 +48,8 @@ For React with TypeScript projects, you should use the following config inside y
 
 ```json
 {
-  "extends": ["greencoast/react-ts"]
+  "extends": ["@moonstar-x/eslint-config/rules/react/typescript"]
 }
-```
-
-Additionally, you'll need to install some config dependencies:
-
-```text
-npm install --save-dev @typescript-eslint/eslint-plugin eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-flowtype eslint-plugin-import eslint-plugin-react-hooks
 ```
 
 ## Rule Overriding
@@ -71,7 +59,7 @@ In addition to including this config and its derivatives, you can override rules
 ```json
 {
   "extends": [
-    "greencoast/@type"
+    "@moonstar-x/eslint-config/rules/type"
   ],
   "rules": {
     "eslint-rule-name": ["enabled", "options"]
@@ -79,7 +67,3 @@ In addition to including this config and its derivatives, you can override rules
   }
 }
 ```
-
-## Author
-
-This ESLint config was made by [Greencoast Studios](https://github.com/greencoast-studios).

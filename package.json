@@ -1,37 +1,34 @@
 {
-  "name": "eslint-config-greencoast",
-  "version": "0.0.5",
-  "description": "A shareable ESLint config used by Greencoast Studios.",
+  "name": "@moonstar-x/eslint-config",
+  "version": "1.0.0",
+  "description": "A shareable ESLint config used by moonstar-x.",
+  "files": [
+    "rules/**/*"
+  ],
+  "author": "moonstar-x",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greencoast-studios/eslint-config-greencoast.git"
+    "url": "git+https://github.com/moonstar-x/eslint-config-moonstar-x.git"
   },
+  "bugs": {
+    "url": "https://github.com/moonstar-x/eslint-config-moonstar-x/issues"
+  },
+  "homepage": "https://github.com/moonstar-x/eslint-config-moonstar-x#readme",
   "keywords": [
     "eslint",
     "eslintconfig",
-    "greencoast",
-    "greencoast-studios",
-    "eslint-greencoast",
-    "eslint-config-greencoast"
+    "moonstar-x",
+    "eslint-moonstar-x",
+    "eslint-config-moonstar-x"
   ],
-  "author": "Greencoast Studios",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/greencoast-studios/eslint-config-greencoast/issues"
-  },
-  "homepage": "https://github.com/greencoast-studios/eslint-config-greencoast#readme",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.62.0",
-    "eslint": ">=8",
-    "eslint-plugin-flowtype": ">=8.0.3",
-    "eslint-plugin-import": ">=2.27.5",
-    "eslint-plugin-jsx-a11y": ">=6.7.1",
-    "eslint-plugin-react": ">=7.32.2",
-    "eslint-plugin-react-hooks": ">=4.6.0"
+    "@typescript-eslint/eslint-plugin": ">=7",
+    "eslint": ">=8"
   },
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@typescript-eslint/parser": "^6.1.0",
+    "@typescript-eslint/parser": "^7.17.0",
     "eslint-config-react-app": "^7.0.1"
   }
 }

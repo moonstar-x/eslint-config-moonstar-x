@@ -1,0 +1,13 @@
+name: On Push (Main)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish Package
+    uses: ./.github/workflows/callable-publish.yml
+    secrets:
+      token: ${{ secrets.NPM_TOKEN }}
