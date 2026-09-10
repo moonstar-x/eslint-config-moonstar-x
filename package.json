@@ -1,34 +1,63 @@
 {
   "name": "@moonstar-x/eslint-config",
-  "version": "1.0.0",
-  "description": "A shareable ESLint config used by moonstar-x.",
+  "version": "2.0.0",
+  "description": "Strict, composable ESLint 10 flat configurations for JavaScript, TypeScript, Node.js and React projects.",
+  "scripts": {
+
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "rules/**/*"
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
   ],
-  "author": "moonstar-x",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moonstar-x/eslint-config-moonstar-x.git"
-  },
-  "bugs": {
-    "url": "https://github.com/moonstar-x/eslint-config-moonstar-x/issues"
-  },
-  "homepage": "https://github.com/moonstar-x/eslint-config-moonstar-x#readme",
   "keywords": [
     "eslint",
     "eslintconfig",
-    "moonstar-x",
-    "eslint-moonstar-x",
-    "eslint-config-moonstar-x"
+    "eslint-config",
+    "flat-config",
+    "typescript",
+    "react",
+    "node",
+    "strict",
+    "stylistic"
   ],
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=7",
-    "eslint": ">=8"
+  "license": "MIT",
+  "author": "moonstar-x <christian.lopez99@outlook.com>",
+  "homepage": "https://github.com/moonstar-x-libs/eslint-config-moonstar-x#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonstar-x-libs/eslint-config-moonstar-x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moonstar-x-libs/eslint-config-moonstar-x/issues"
   },
   "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@typescript-eslint/parser": "^7.17.0",
-    "eslint-config-react-app": "^7.0.1"
+
+  },
+  "peerDependencies": {
+
+  },
+  "peerDependenciesMeta": {
+
+  },
+  "devDependencies": {
+
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   }
 }
