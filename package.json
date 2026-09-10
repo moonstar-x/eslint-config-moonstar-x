@@ -3,7 +3,11 @@
   "version": "2.0.0",
   "description": "Strict, composable ESLint 10 flat configurations for JavaScript, TypeScript, Node.js and React projects.",
   "scripts": {
-
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "tsc --build tsconfig.build.json --clean",
+    "prebuild": "npm run clean",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
   },
   "type": "module",
   "main": "./dist/index.js",
@@ -42,17 +46,12 @@
   "bugs": {
     "url": "https://github.com/moonstar-x-libs/eslint-config-moonstar-x/issues"
   },
-  "dependencies": {
-
-  },
-  "peerDependencies": {
-
-  },
-  "peerDependenciesMeta": {
-
-  },
+  "peerDependenciesMeta": {},
   "devDependencies": {
-
+    "@moonstar-x/tsconfig": "^1.0.1",
+    "@types/node": "^22.20.2",
+    "eslint": "^10.10.0",
+    "typescript": "^7.0.2"
   },
   "publishConfig": {
     "access": "public"
