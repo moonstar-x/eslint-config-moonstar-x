@@ -17,3 +17,11 @@ export const GLOB_CONFIG_FILES: string[] = [
   '**/*.config.*.?([cm])[jt]s',
   '**/.*rc.?([cm])[jt]s'
 ];
+
+export const GLOB_TESTS: string[] = [
+  '**/*.{test,spec}.?([cm])[jt]s?(x)',
+  '**/__tests__/**/*.?([cm])[jt]s?(x)',
+  '**/__mocks__/**/*.?([cm])[jt]s?(x)',
+  '**/test/**/*.?([cm])[jt]s?(x)',
+  '**/tests/**/*.?([cm])[jt]s?(x)'
+];
