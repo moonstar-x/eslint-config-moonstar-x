@@ -4,6 +4,7 @@ import { react } from './configs/react.js';
 import { sorted } from './configs/sorted.js';
 import { ignores } from './configs/ignores.js';
 import { browser } from './configs/browser.js';
+import { jest } from './configs/jest.js';
 import { typescript, typescriptSyntaxOnly } from './configs/typescript.js';
 import { stylisticJsx } from './configs/stylistic-jsx.js';
 import { stylistic } from './configs/stylistic.js';
@@ -21,6 +22,7 @@ export {
   stylistic,
   stylisticJsx,
   browser,
+  jest,
   type Ruleset
 }
 export * from './utils/globs.js';
@@ -37,6 +39,7 @@ export interface MoonstarESLint {
   stylisticJsx: Ruleset;
   typescriptSyntaxOnly: Ruleset;
   browser: Ruleset;
+  jest: Ruleset;
 }
 
 // Single Default Export
@@ -51,6 +54,7 @@ const config: MoonstarESLint = {
   stylistic,
   stylisticJsx,
   browser,
+  jest
 };
 
 export default config;
