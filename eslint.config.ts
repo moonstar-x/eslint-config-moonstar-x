@@ -2,9 +2,9 @@ import type { Linter } from 'eslint';
 import { base, ignores, node, sorted, stylistic, typescript } from './src/index.js';
 
 const config: Linter.Config[] = [
+  ...ignores,
   ...base,
   ...typescript,
-  ...ignores,
   ...node,
   ...stylistic,
   ...sorted,
