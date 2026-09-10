@@ -8,9 +8,15 @@ on:
 run-name: Release ${{ github.event.release.tag_name }} by @${{ github.actor }}
 
 jobs:
+  test:
+    name: Run Tests
+    uses: ./.github/workflows/callable-test.yml
+
   publish:
     name: Publish Package
     uses: ./.github/workflows/callable-publish.yml
+    needs:
+      - test
     permissions:
       id-token: write
       contents: read
