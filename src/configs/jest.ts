@@ -1,8 +1,8 @@
 import jestPlugin from 'eslint-plugin-jest';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_TESTS } from '../utils/globs.js';
-import { escalate } from '../utils/severity.js';
 import { buildConfigName } from '../utils/naming.js';
+import { escalate } from '../utils/severity.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * Jest rules, scoped to test files only.

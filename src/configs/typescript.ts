@@ -2,9 +2,9 @@ import type { Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import importXPlugin from 'eslint-plugin-import-x';
 import tseslint from 'typescript-eslint';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_DTS, GLOB_TYPESCRIPT } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /** A `typescript-eslint` preset entry, which types its own rules as a bare `object`. */
 interface RulesCarrier {

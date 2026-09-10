@@ -1,8 +1,8 @@
 import unicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_SRC } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * Browser environment: DOM globals plus the restrictions that only make sense

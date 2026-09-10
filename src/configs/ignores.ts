@@ -1,6 +1,6 @@
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_EXCLUDED } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * Global ignore patterns for generated output, dependencies and lock files.

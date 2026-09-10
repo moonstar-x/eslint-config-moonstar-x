@@ -1,9 +1,9 @@
 import stylisticPlugin from '@stylistic/eslint-plugin';
 import regexpPlugin from 'eslint-plugin-regexp';
 import unicorn from 'eslint-plugin-unicorn';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_SRC, GLOB_TYPESCRIPT } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * Formatting and layout rules.

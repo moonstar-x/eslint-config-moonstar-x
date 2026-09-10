@@ -4,9 +4,9 @@ import promise from 'eslint-plugin-promise';
 import regexpPlugin, { configs as regexpConfigs } from 'eslint-plugin-regexp';
 import unicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_COMMONJS, GLOB_CONFIG_FILES, GLOB_SRC } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * The strict JavaScript foundation every other configuration builds on.

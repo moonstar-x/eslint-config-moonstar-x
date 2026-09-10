@@ -1,8 +1,8 @@
 import n from 'eslint-plugin-n';
 import globals from 'globals';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_COMMONJS, GLOB_SRC } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * Node.js environment rules: globals, module resolution, and the runtime

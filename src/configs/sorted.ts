@@ -1,7 +1,7 @@
 import perfectionist from 'eslint-plugin-perfectionist';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_JSX_ALL, GLOB_SRC, GLOB_TYPESCRIPT } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 const shared = {
   ignoreCase: true,

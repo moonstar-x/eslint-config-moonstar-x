@@ -1,7 +1,7 @@
 import stylisticPlugin from '@stylistic/eslint-plugin';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_JSX_ALL } from '../utils/globs.js';
 import { buildConfigName } from '../utils/naming.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * JSX formatting rules.

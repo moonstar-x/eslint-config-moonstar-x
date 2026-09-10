@@ -1,10 +1,10 @@
 import eslintReact from '@eslint-react/eslint-plugin';
 import type { ESLint } from 'eslint';
 import reactHooks from 'eslint-plugin-react-hooks';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_JSX_ALL, GLOB_SRC, GLOB_TESTS, GLOB_TYPESCRIPT } from '../utils/globs.js';
-import { escalate } from '../utils/severity.js';
 import { buildConfigName } from '../utils/naming.js';
+import { escalate } from '../utils/severity.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * `eslint-plugin-react-hooks` still nests its legacy presets under

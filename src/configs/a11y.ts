@@ -2,10 +2,10 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 import process from 'node:process';
 import type { ESLint, Linter } from 'eslint';
-import type { Ruleset } from '../utils/types.js';
 import { GLOB_SRC } from '../utils/globs.js';
-import { escalate } from '../utils/severity.js';
 import { buildConfigName } from '../utils/naming.js';
+import { escalate } from '../utils/severity.js';
+import type { Ruleset } from '../utils/types.js';
 
 /**
  * The shape of `eslint-plugin-jsx-a11y` that this configuration relies on.
