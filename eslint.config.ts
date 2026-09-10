@@ -9,6 +9,15 @@ const config: Linter.Config[] = [
   ...stylistic,
   ...sorted,
   {
+    name: 'tests',
+    files: ['test/**/*.ts'],
+    rules: {
+      'max-nested-callbacks': 'off',
+      'max-lines-per-function': 'off',
+      'max-statements': 'off'
+    }
+  },
+  {
     name: 'ignores',
     ignores: ['test/fixtures/**', '_totest/**']
   }

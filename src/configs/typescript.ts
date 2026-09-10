@@ -356,7 +356,7 @@ export const typescriptSyntaxOnly: Ruleset = [
       'import-x/consistent-type-specifier-style': ['error', 'prefer-top-level']
     }
   },
-  { ...relaxedForDeclarationFiles, name: 'moonstar/typescript-syntax-only/declarations' }
+  { ...relaxedForDeclarationFiles, name: buildConfigName('typescript-syntax-only/declarations') }
 ];
 
 export default typescript;
