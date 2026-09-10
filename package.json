@@ -101,7 +101,8 @@
   "overrides": {
     "eslint-plugin-jsx-a11y": {
       "eslint": "$eslint"
-    }
+    },
+    "type-fest": "^4.41.0"
   },
   "allowScripts": {
     "unrs-resolver@1.12.2": true,
