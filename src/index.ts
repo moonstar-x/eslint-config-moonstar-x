@@ -2,6 +2,7 @@ import { base } from './configs/base.js'
 import { node } from './configs/node.js';
 import { react } from './configs/react.js';
 import { sorted } from './configs/sorted.js';
+import { ignores } from './configs/ignores.js';
 import { typescript, typescriptSyntaxOnly } from './configs/typescript.js';
 import type { Ruleset } from './utils/types.js';
 
@@ -11,6 +12,7 @@ export {
   node,
   react,
   sorted,
+  ignores,
   typescript,
   typescriptSyntaxOnly,
   type Ruleset
@@ -23,6 +25,7 @@ export interface MoonstarESLint {
   node: Ruleset;
   react: Ruleset;
   sorted: Ruleset;
+  ignores: Ruleset;
   typescript: Ruleset;
   typescriptSyntaxOnly: Ruleset;
 }
@@ -34,6 +37,7 @@ const config: MoonstarESLint = {
   react,
   sorted,
   typescript,
+  ignores,
   typescriptSyntaxOnly
 };
 

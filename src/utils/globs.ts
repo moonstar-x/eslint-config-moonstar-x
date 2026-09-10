@@ -25,3 +25,28 @@ export const GLOB_TESTS: string[] = [
   '**/test/**/*.?([cm])[jt]s?(x)',
   '**/tests/**/*.?([cm])[jt]s?(x)'
 ];
+
+export const GLOB_EXCLUDED: string[] = [
+  '**/node_modules/**',
+  '**/dist/**',
+  '**/build/**',
+  '**/out/**',
+  '**/coverage/**',
+  '**/.next/**',
+  '**/.nuxt/**',
+  '**/.svelte-kit/**',
+  '**/.astro/**',
+  '**/.vercel/**',
+  '**/.netlify/**',
+  '**/.turbo/**',
+  '**/.yarn/**',
+  '**/.pnp.*',
+  '**/vendor/**',
+  '**/*.min.js',
+  '**/CHANGELOG.md',
+  '**/LICENSE*',
+  '**/package-lock.json',
+  '**/pnpm-lock.yaml',
+  '**/yarn.lock',
+  '**/bun.lock?(b)'
+];
